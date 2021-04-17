@@ -2,10 +2,10 @@
 let cLEARNING_RATE = 0.01 ;;
 
 let gradient_descent ((a,b) : float * float) : float * float =
-  (* calculating the gradient at an the point (x0,y0) *)
+  (* Calculate the gradient at the point (x0,y0) *)
   let grad_a = 4. *. (-. 7. +. 2. *. a +. 5. *. b) in
   let grad_b = ~-. 78. +. 20. *. a +. 60. *. b in
-  (* adding the step size to the original point to get x_1 *)
+  (* Add the step size to the original point to get x_1 *)
   a -. cLEARNING_RATE *. grad_a, b -. cLEARNING_RATE *. grad_b ;;
 
 let rec calc_nth_step (initial: float * float) (n : int) = 
