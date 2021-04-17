@@ -1,4 +1,4 @@
-(* Set a Learning Rate as specified in the problem *)
+(* Set a learning rate as specified in the problem *)
 let cLEARNING_RATE = 0.01 ;;
 
 let gradient_descent ((a,b) : float * float) : float * float =
